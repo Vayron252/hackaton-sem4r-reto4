@@ -1,8 +1,144 @@
-/* * {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.contenedor-todo {
-    background-color: aqua;
-    margin: 0 auto;
-} */
+.solo-contenedor {
+    padding: 0 5rem;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    border: 1px solid red;
+    width: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem auto;
+}
+
+.contenedor-logo {
+    padding-left: 3rem;
+}
+
+button {
+    border: 1px solid red;
+    background-color: white;
+    padding: .5rem;
+    width: 150px;
+}
+
+.contenedor-contacto {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.section-img-portada {
+    background-image: linear-gradient(rgba(41, 24, 21, 0.5), rgba(41, 24, 21, 0.9)), url(./img/buffet-1.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-img-portada h1 {
+    text-align: center;
+    color: yellow;
+    font-size: 4rem;
+    text-shadow: 5px 3px 0 #000;
+}
+
+.section-quienes-somos {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contenido-con-imagen {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.section-promocional {
+    background-image: linear-gradient(rgba(63, 40, 36, 0.5), rgba(58, 37, 33, 0.9)), url(./img/food-table.jpg);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.section-promocional h3 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+
+.section-nuestros-servicios {
+    text-align: center;
+}
+
+.contenido-imagenes-servicios {
+    display: flex;
+    gap: 2rem;
+}
+
+.seccion-paquetes {
+    text-align: center;
+}
+
+.contenedor-tarjeta-paquetes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contenedor-tarjeta-paquetes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contenedor-tarjeta-paquetes ul li::before {
+    content: '✓';
+    color: green;
+    margin-right: .3em;
+}
+
+.seccion-contacto .texto-contacto {
+    text-align: center;
+}

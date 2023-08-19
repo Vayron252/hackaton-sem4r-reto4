@@ -11,7 +11,7 @@
 
 <body>
 	<div class="contenedor-todo">
-		<header>
+		<header class="solo-contenedor">
 			<div class="contenedor-logo">
 				<img src="./img/logo.png" alt="imagen-logo">
 			</div>
@@ -28,31 +28,32 @@
 			</div>
 		</header>
 		<main>
-			<section class="section-img-portada">
-				<img src="./img/buffet-1.jpg" alt="imagen-portada">
-				<h1>SERVICIOS DE CATERING PARA TODA OCASIÓN</h1>
+			<section class="section-img-portada solo-contenedor">
+				<!-- <img src="./img/buffet-1.jpg" alt="imagen-portada"> -->
+				<h1>SERVICIOS DE CATERING<br>PARA TODA OCASIÓN</h1>
 			</section>
-			<section class="section-quienes-somos">
+			<section class="section-quienes-somos solo-contenedor">
 				<h2>QUÍENES SOMOS</h2>
 				<hr>
 				<div class="contenido-con-imagen">
 					<img src="./img/buffet-section.jpg" alt="imagen-buffet-section">
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui blanditiis, distinctio at
-						ipsum ad nemo nobis ratione nam aut corporis unde dignissimos earum recusandae voluptate!
-						Explicabo quisquam soluta reiciendis?</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui blanditiis, distinctio at
-						ipsum ad nemo nobis ratione nam aut corporis unde dignissimos earum recusandae voluptate!
-						Explicabo quisquam soluta reiciendis?</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui blanditiis, distinctio at
-						ipsum ad nemo nobis ratione nam aut corporis unde dignissimos earum recusandae voluptate!
-						Explicabo quisquam soluta reiciendis?</p>
+					<div>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui blanditiis, distinctio at
+							ipsum ad nemo nobis ratione nam aut corporis unde dignissimos earum recusandae voluptate!
+							Explicabo quisquam soluta reiciendis?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui blanditiis, distinctio at
+							ipsum ad nemo nobis ratione nam aut corporis unde dignissimos earum recusandae voluptate!
+							Explicabo quisquam soluta reiciendis?</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui blanditiis, distinctio at
+							ipsum ad nemo nobis ratione nam aut corporis unde dignissimos earum recusandae voluptate!
+							Explicabo quisquam soluta reiciendis?</p>
+					</div>
 				</div>
 			</section>
 			<section class="section-promocional">
-				<img src="./img/food-table.jpg" alt="imagen-portada">
-				<h3>Proveemos soluciones premium de catering para eventos formales o casuales.</h3>
+				<h3>Proveemos soluciones premium de catering<br>para eventos formales o casuales.</h3>
 			</section>
-			<section class="section-nuestros-servicios">
+			<section class="section-nuestros-servicios solo-contenedor">
 				<h2>NUESTRO SERVICIOS</h2>
 				<hr>
 				<div class="contenido-imagenes-servicios">
@@ -70,7 +71,7 @@
 					</article>
 				</div>
 			</section>
-			<section class="seccion-paquetes">
+			<section class="seccion-paquetes solo-contenedor">
 				<h2>PAQUETES DE CATERING</h2>
 				<hr>
 				<p>Contamos con paquetes personalizados a la medida de tus necesidades</p>
@@ -113,24 +114,28 @@
 					</article>
 				</div>
 			</section>
-			<section class="seccion-contacto">
+			<section class="seccion-contacto solo-contenedor">
 				<form>
-					<h2>CONTACTO</h2>
-					<hr>
-					<p>Dirección: Broadway & Morris St, New York, NY 10006</p>
-					<p>Teléfono: 1-234-567-8910</p>
-					<p>Email: info@email.com</p>
-					<div>
-						<label for="">Nombre:</label>
-						<input type="text">
+					<div class="texto-contacto">
+						<h2>CONTACTO</h2>
+						<hr>
+						<p>Dirección: Broadway & Morris St, New York, NY 10006</p>
+						<p>Teléfono: 1-234-567-8910</p>
+						<p>Email: info@email.com</p>
 					</div>
 					<div>
-						<label for="">Teléfono:</label>
-						<input type="number">
-					</div>
-					<div>
-						<label for="">Email:</label>
-						<input type="email">
+						<div>
+							<label for="">Nombre:</label>
+							<input type="text">
+						</div>
+						<div>
+							<label for="">Teléfono:</label>
+							<input type="number">
+						</div>
+						<div>
+							<label for="">Email:</label>
+							<input type="email">
+						</div>
 					</div>
 					<div>
 						<label for="">Escribe un comentario:</label>
