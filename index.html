@@ -4,8 +4,11 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="./styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="./styles.css">
 	<title>Catering</title>
 </head>
 
@@ -37,7 +40,7 @@
 				<hr>
 				<div class="contenido-con-imagen">
 					<img src="./img/buffet-section.jpg" alt="imagen-buffet-section">
-					<div>
+					<div class="texto-seccion-quienes-somos">
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere qui blanditiis, distinctio at
 							ipsum ad nemo nobis ratione nam aut corporis unde dignissimos earum recusandae voluptate!
 							Explicabo quisquam soluta reiciendis?</p>
@@ -80,67 +83,74 @@
 						<h3>Silver</h3>
 						<p>$15.99 / Persona</p>
 						<ul>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li>-</li>
+							<li>-</li>
+							<li>-</li>
+							<li>-</li>
 						</ul>
 					</article>
 					<article>
 						<h3>Gold</h3>
 						<p>$19.99 / Persona</p>
 						<ul>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li>-</li>
+							<li>-</li>
 						</ul>
 					</article>
 					<article>
 						<h3>Platinum</h3>
 						<p>$29.99 / Persona</p>
 						<ul>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
-							<li>Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
+							<li><i class="fa-solid fa-check"></i> Lorem cosequatur aperiam</li>
 						</ul>
 					</article>
 				</div>
 			</section>
 			<section class="seccion-contacto solo-contenedor">
+				<h2>CONTACTO</h2>
+				<hr>
+				<div class="texto-contacto">
+					<p>Dirección: Broadway & Morris St, New York, NY 10006</p>
+					<p>Teléfono: 1-234-567-8910</p>
+					<p>Email: info@email.com</p>
+				</div>
 				<form>
-					<div class="texto-contacto">
-						<h2>CONTACTO</h2>
-						<hr>
-						<p>Dirección: Broadway & Morris St, New York, NY 10006</p>
-						<p>Teléfono: 1-234-567-8910</p>
-						<p>Email: info@email.com</p>
-					</div>
-					<div>
-						<div>
+					<div class="contenedor-input">
+						<div class="item-contact">
 							<label for="">Nombre:</label>
 							<input type="text">
 						</div>
-						<div>
+						<div class="item-contact">
 							<label for="">Teléfono:</label>
 							<input type="number">
 						</div>
-						<div>
+						<div class="item-contact">
 							<label for="">Email:</label>
 							<input type="email">
 						</div>
 					</div>
-					<div>
+					<div class="item-contact">
 						<label for="">Escribe un comentario:</label>
 						<textarea name="" id="" cols="30" rows="10"></textarea>
 					</div>
+					<button>Enviar</button>
 				</form>
 			</section>
 			<section class="seccion-mapa">
@@ -152,12 +162,11 @@
 			</section>
 		</main>
 		<footer>
-			<div>
+			<div class="contenedor">
 				<i class="fa-brands fa-facebook"></i>
 				<i class="fa-brands fa-instagram"></i>
 				<i class="fa-brands fa-pinterest"></i>
 			</div>
-			<hr>
 			<p>© 2018. Orlando José - SimplicityTree. Derechos reservados</p>
 		</footer>
 	</div>
